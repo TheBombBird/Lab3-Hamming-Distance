@@ -4,14 +4,15 @@
 
 .section .data
 msg1: .ascii
-.set len1, . - msg1
 
 
 
 .section .text
-.global _start
+
 _start:
 
+mov $0,%rdi
+mov %rdi,msg1
 
 
 
